@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -39,10 +40,42 @@ export default function Home() {
               below and let's get crackin!
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16">
+          <div className="text-5xl flex justify-center gap-16 text-gray-600">
             <AiFillGithub />
             <AiFillLinkedin />
             <AiOutlineMail />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/stylist-young-boy-5692599-4743368.png"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">{`My Story`}</h3>
+            <p className="text-md py-2 leading-4 text-gray-600">
+              Since the beginning of my journey I have loved becoming a
+              developer. I am looking for my first job as a
+              <span className="text-teal-500">
+                {" "}
+                Software Engineer/Web Developer
+              </span>
+              <p>
+                I look forward to showcasing my skills and contributing to
+                <span className="text-teal-500">
+                  {" "}
+                  making the world a better place.
+                </span>
+              </p>
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="" alt=""></img>
+            </div>
           </div>
         </section>
       </main>
